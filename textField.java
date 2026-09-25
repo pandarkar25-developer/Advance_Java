@@ -42,7 +42,7 @@ public class textField extends JFrame implements ActionListener  {
     
 
     public static void main(String[] args) {
-        textField jf =new textField();
+        new textField();
 
         
     }

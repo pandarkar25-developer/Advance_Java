@@ -40,7 +40,7 @@ public class jTextArea extends JFrame {
     
 
     public static void main(String[] args) {
-        jTextArea jf =new jTextArea();
+        new jTextArea();
 
         
     }

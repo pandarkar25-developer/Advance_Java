@@ -48,7 +48,7 @@ public class jtextfild extends JFrame implements ActionListener{
         }
 
     public static void main(String[] args) {
-        jtextfild jf =new jtextfild();
+        new jtextfild();
 
         
     }
