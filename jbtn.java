@@ -17,6 +17,7 @@ public class jbtn extends JFrame implements ActionListener {
         setSize(500, 500);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        
 
         btn = new JButton("Print");
 
