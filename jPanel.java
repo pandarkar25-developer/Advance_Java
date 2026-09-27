@@ -1,7 +1,6 @@
 import javax.swing.*;
 
 import java.awt.Color;
-import java.awt.Event;
 import java.awt.event.*;
 
 public class jPanel extends JFrame{
