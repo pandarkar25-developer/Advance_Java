@@ -3,7 +3,7 @@ import javax.swing.*;
 public class buttonGroup extends JFrame {
     
     public buttonGroup(){
-        //New Branch
+
         setBounds(40,40,500,500);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
