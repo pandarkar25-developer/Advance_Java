@@ -27,6 +27,8 @@ public class jbtn extends JFrame implements ActionListener {
 
         btn.setIcon(ic);
 
+        btn.addActionListener(e->JOptionPane.showMessageDialog(jbtn.this,"Jay Ganesh"));
+
         btn.setHorizontalTextPosition(JButton.CENTER);
         btn.setVerticalTextPosition(JButton.BOTTOM);
 
