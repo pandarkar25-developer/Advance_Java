@@ -12,7 +12,7 @@ public class gridBagLayout extends JFrame {
         gbc.weightx=0.5;
 
         setLayout(gb);
-        gbc.fill=gbc.HORIZONTAL;
+        gbc.fill=2;
         setBounds(30,30,600,600);
 
         add(new JButton("1"),gbc);
@@ -37,7 +37,7 @@ public class gridBagLayout extends JFrame {
 
         gbc.gridwidth=2;
         gbc.ipady=0;
-        gbc.anchor=gbc.PAGE_END;
+        gbc.anchor=20;
         gbc.weighty=1;
         
         gbc.gridx=1;
