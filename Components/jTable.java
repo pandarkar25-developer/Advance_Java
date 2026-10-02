@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.event.*;
 public class jTable extends JFrame {
     
     
@@ -21,6 +22,18 @@ public class jTable extends JFrame {
         jsp.setBounds(30,30,200,200);
         jt.setBounds(30,30,200,200);
         //jsp.add(jt);
+
+        JButton b =new JButton("Select");
+        b.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                JOptionPane.showMessageDialog( jTable.this,jt.getValueAt(jt.getSelectedRow(),1));
+            }
+        });
+
+        
+        b.setBounds(30,350,100,40);
+
+        add(b);
         
         add(jsp);
         setVisible(true);
