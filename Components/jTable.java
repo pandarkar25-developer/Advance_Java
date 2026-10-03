@@ -21,12 +21,33 @@ public class jTable extends JFrame {
         JScrollPane jsp =new JScrollPane(jt);
         jsp.setBounds(30,30,200,200);
         jt.setBounds(30,30,200,200);
+        
+
+        
+
+        
         //jsp.add(jt);
 
         JButton b =new JButton("Select");
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
-                JOptionPane.showMessageDialog( jTable.this,jt.getValueAt(jt.getSelectedRow(),1));
+
+                String da[][]=new String[1][4];
+        
+
+                for(int i=0;i<4;i++){
+                    da[0][i]=data[jt.getSelectedRow()][i];
+                }
+                
+                JTable t =new JTable(da,columns);
+
+                JScrollPane jp =new JScrollPane(t);
+                jp.setBounds(260,30,200,200);
+                
+                add(jp);
+                
+
+
             }
         });
 
